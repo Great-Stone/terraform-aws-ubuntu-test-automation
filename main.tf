@@ -143,10 +143,10 @@ resource "aws_instance" "ubuntu" {
   associate_public_ip_address = true
   vpc_security_group_ids      = [aws_security_group.example.id]
 
-  root_block_device {
-    volume_type = "gp3"
-    volume_size = 200
-  }
+  # root_block_device {
+  #   volume_type = "gp3"
+  #   volume_size = 200
+  # }
 
   tags = {
     Name = "ubuntu"
